@@ -3,10 +3,6 @@ html,body {
   padding: 0;
 }
 
-.container {
-
-}
-
 .sidebar {
   float: left;
   padding-right: 10px;
@@ -16,4 +12,5 @@ html,body {
 
 .content {
   margin-left: 120px;
+  overflow: auto;
 }

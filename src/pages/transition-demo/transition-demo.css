@@ -1,0 +1,94 @@
+.transition-demo-page {
+
+    margin: 20px 0 50px;
+
+
+}
+
+.clock {
+    width: 400px;
+    height: 400px;
+    background: black;
+    border-radius: 50%;
+    position: relative;
+}
+
+.clock::before {
+    /* 表盘中心 */
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: grey;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.clock::after {
+    /* 表针 */
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 50%;
+    background: grey;
+    position: absolute;
+    left: 50%;
+    top: 0;
+
+    transform: translateX(-50%);
+    transform-origin: bottom;
+
+    transition: transform 60s steps(60, start);
+}
+
+.clock:hover::after {
+    transform: translateX(-50%) rotate(360deg);
+}
+
+
+.slider01 {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.post01 {
+    width: 300px;
+    height: 200px;
+}
+
+.box01 {
+    width: 600px;
+    height: 200px;
+    transition: transform 1s ease;
+}
+
+.box01:hover {
+    transform: translateX(-300px);
+}
+
+
+.slider02 {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.post02 {
+    width: 300px;
+    height: 200px;
+}
+
+.box02 {
+    width: 900px;
+    height: 200px;
+    transition: transform 3s ease;
+}
+
+.box02:hover {
+    transform: translateX(-600px);
+}

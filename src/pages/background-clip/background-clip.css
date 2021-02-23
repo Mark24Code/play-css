@@ -1,0 +1,28 @@
+
+.background-clip-page {
+	background: #868686;
+    overflow: auto;
+}
+
+.bg {
+	border: 10px solid hsla(0,0%,100%,.5);
+	background: white;
+	/* styling */
+	max-width: 20em;
+	padding: 2em;
+	margin: 2em auto;
+	font: 100%/1.5 sans-serif;
+} 
+
+
+.bg-padding-box{
+    background-clip: padding-box;
+}
+
+.bg-content-box{
+    background-clip: content-box;
+}
+
+.bg-border-box{
+	background-clip: border-box;
+}

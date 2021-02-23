@@ -1,0 +1,43 @@
+@keyframes move {
+    from {
+        transform: translate(0px);
+    }
+
+    50% {
+        transform: translate(300px);
+    }
+
+    to {
+        transform: translate(0px);
+    }
+}
+
+
+.ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: red;
+
+    transition: width 2s ease 0.5s;
+    /* animation: move 2s linear 2s infinite; */
+}
+
+
+#delay1 {
+  position: relative;
+  /* transition-property: font-size;
+  transition-duration: 4s;
+  transition-delay: 2s; */
+  font-size: 14px;
+
+  /* transition: font-size 4s ease 0s; */
+}
+
+#delay1:hover {
+  /* transition-property: font-size;
+  transition-duration: 4s;
+  transition-delay: 2s; */
+  transition: font-size 4s ease 0s;
+  font-size: 36px;
+}

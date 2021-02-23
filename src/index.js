@@ -12,25 +12,23 @@ import routes from './routes';
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <div className="container">
-        <div className="sidebar">
-          <ul>
-            {routes.map(route => (
-              <li key={route.path}>
-                <Link to={route.path}>{route.name}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="content">
-          <Switch>
-            {routes.map(route => (
-              <Route exact path={route.path} key={route.path}>
-                <route.component />
-              </Route>
-            ))}
-          </Switch>
-        </div>
+      <div className="sidebar">
+        <ul>
+          {routes.map(route => (
+            <li key={route.path}>
+              <Link to={route.path}>{route.name}</Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="content">
+        <Switch>
+          {routes.map(route => (
+            <Route exact path={route.path} key={route.path}>
+              <route.component />
+            </Route>
+          ))}
+        </Switch>
       </div>
     </Router>
   </React.StrictMode>,
