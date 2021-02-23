@@ -1,6 +1,7 @@
 import React from 'react';
 import './transition-demo.css'
 
+
 const Clock = () => {
     return (
         <div className="transition-demo-page">
@@ -26,6 +27,13 @@ const Clock = () => {
                         <img className="post02" src="https://i.loli.net/2021/02/23/wMP6W3GvZDSeoVX.jpg" alt="python" />
                         <img className="post02" src="https://i.loli.net/2021/02/23/NGUfEmRKnY7bhrz.jpg" alt="ruby" />
                     </div>
+                </div>
+            </div>
+            <div>
+                <p>点赞效果</p>
+                <div className="like-box">
+                    <div className="fa fa-heart heart"></div>
+                    <div className="fa fa-heart heart like-heart"></div>
                 </div>
             </div>
         </div>
