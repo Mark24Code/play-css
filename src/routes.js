@@ -1,7 +1,7 @@
 import Welcome from './pages/welcome';
 import Typer from './pages/typer';
 import BackgroundClipPage from './pages/background-clip';
-import AnimationBallPage from './pages/animation-ball';
+import AnimationDemoPage from './pages/animation-demo';
 import TransitionDemo from './pages/transition-demo';
 
 
@@ -22,9 +22,9 @@ const routes = [
         component: BackgroundClipPage
     },
     {
-        name: 'animation-ball',
-        path: '/animation/ball',
-        component: AnimationBallPage
+        name: 'animation-demo',
+        path: '/animation-demo',
+        component: AnimationDemoPage
     },
     {
         name: 'transition-demo',

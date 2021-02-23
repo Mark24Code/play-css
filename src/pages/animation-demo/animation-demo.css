@@ -1,0 +1,131 @@
+.animation-demo-page {
+    margin: 100px 0 200px;
+}
+
+@keyframes wobble {
+  0% {
+    background:green;
+  }
+  40% {
+    background:orange;
+  }
+  60% {
+    background: blue;
+  }
+  100% {
+    background: red;
+  }
+}
+.demo1 {
+  width: 100px;
+  height: 100px;
+  background:red;
+  color: #fff;
+}
+.demo1:hover{
+  animation: wobble 5s ease;
+}
+
+
+
+.polling_message {
+  color: white;
+  float: left;
+  margin-right: 2%;
+}
+
+.view_port {
+  background-color: black;
+  height: 25px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cylon_eye {
+  background-color: red;
+  background-image: linear-gradient(to right,
+      rgba(0, 0, 0, .9) 25%,
+      rgba(0, 0, 0, .1) 50%,
+      rgba(0, 0, 0, .9) 75%);
+  color: white;
+  height: 100%;
+  width: 20%;
+
+  animation: 4s linear 0s infinite alternate move_eye;
+}
+
+@keyframes move_eye { 
+    from { 
+        margin-left: -20%; 
+    } 
+    
+
+    to {
+        margin-left: 100%; 
+    }  
+}
+
+
+.circles-box {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.circle-inner {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: rgba(118, 218, 255,1);
+
+    position: absolute;
+    left: 5%;
+    top: 5%;
+
+}
+
+.c01 {
+    animation: rotate 10s infinite 1s;
+    background: rgba(118, 218, 255,0.2);
+}
+
+.c02 {
+    animation: rotate 8s infinite;
+    background: rgba(118, 218, 255,0.3);
+}
+
+.c03 {
+    animation: rotate 15s infinite;
+    background: rgba(118, 218, 255,0.5);
+}
+
+.text {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-45%, -55%);
+    font-weight: bold;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    } 
+
+    25% {
+        transform: translate(15px, 20px) rotate(90deg);
+    }
+    
+    50% {
+        transform: translate(20px, 15px) rotate(180deg);
+    }
+
+    75% {
+        transform: translate(15px, 20px) rotate(270deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+    } 
+}
