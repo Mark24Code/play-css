@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import {
+  Redirect,
   BrowserRouter as Router,
   Switch,
   Route,
@@ -23,6 +24,7 @@ ReactDOM.render(
       </div>
       <div className="content">
         <Switch>
+          <Redirect exact from="/" to="/welcome" />
           {routes.map(route => (
             <Route exact path={route.path} key={route.path}>
               <route.component />
