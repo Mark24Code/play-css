@@ -26,6 +26,14 @@ const AnimationDemoPage = () => {
                     <div className="text">CSS IS AWESOME</div>
                 </div>
             </div>
+
+            <div>
+                <p>动画循环次数和方向</p>
+                <div className="count-direction-box">
+                    <div className="test-b-01">run01 2s ease 0.5s 5;</div>
+                    <div className="test-b-02"> run01 2s ease 0.5s 5 alternate; 鼠标悬浮暂停</div>
+                </div>
+            </div>
         </div>
     )
 }

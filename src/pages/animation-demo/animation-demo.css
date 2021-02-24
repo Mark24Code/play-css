@@ -129,3 +129,26 @@
         transform: translate(0, 0) rotate(360deg);
     } 
 }
+
+
+@keyframes run01 {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(200px);
+  }
+}
+
+.test-b-01 {
+  animation: run01 2s ease 0.5s 5;
+}
+
+.test-b-02 {
+  animation: run01 2s ease 0.5s 5 alternate;
+}
+
+.test-b-02:hover {
+  animation-play-state:paused;
+}

@@ -3,6 +3,7 @@ import Typer from './pages/typer';
 import BackgroundClipPage from './pages/background-clip';
 import AnimationDemoPage from './pages/animation-demo';
 import TransitionDemo from './pages/transition-demo';
+import GridSystem from './pages/grid-system';
 
 
 const routes = [
@@ -30,6 +31,11 @@ const routes = [
         name: 'transition-demo',
         path: '/transition-demo',
         component: TransitionDemo
+    },
+    {
+        name: 'grid-system',
+        path: '/grid-system',
+        component: GridSystem
     }
 ];
 
